@@ -13,4 +13,4 @@ readme = "README.md"
 requires-python = ">=3.10"
 
 [tool.setuptools]
-packages = ["apps", "src", "models", "reports"]
+packages = ["apps", "utils_folder", "models", "src"]

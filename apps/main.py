@@ -1,26 +1,13 @@
-import pickle
-from pathlib import Path
-
 import pandas as pd
 import streamlit as st
 
+from utils_folder.helper import load_pipeline
 from src.features import add_engineered_features
-
-
-ROOT_DIR = Path(__file__).resolve().parents[1]
-MODEL_PATH = ROOT_DIR / "models" / "pipeline.pkl"
-
-
-@st.cache_resource
-def load_pipeline():
-    with open(MODEL_PATH, "rb") as f:
-        pipeline = pickle.load(f)
-    return pipeline
 
 
 pipeline = load_pipeline()
 
-st.title("asgmd05 - hnw")
+st.title("ASGMD05-HNW")
 st.write("Enter passenger information below to predict whether the passenger was transported.")
 
 PassengerId = st.text_input("PassengerId", value="0001_01")

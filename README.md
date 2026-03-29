@@ -11,14 +11,10 @@ asgmd05-hnw/
 ├── apps/
 │   ├── __init__.py
 │   └── main.py
-├── src/
+├── utils_folder/
 │   ├── __init__.py
-│   ├── features.py
-│   ├── preprocess.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── pipeline.py
+│   └── helper.py
 ├── models/
 │   ├── __init__.py
 │   └── pipeline.pkl
-└── reports/
+└── README.md
