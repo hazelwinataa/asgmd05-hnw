@@ -1,4 +1,0 @@
-apps
-models
-reports
-src
